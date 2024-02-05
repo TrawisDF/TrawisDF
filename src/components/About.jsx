@@ -26,9 +26,9 @@ const About = () => {
           in my work if I choose a career path that I'm not passionate about. It
           brought me to this point, and I believe I can thrive here.
         </p>
-        <h3>What I have done from the start in my chosen field❔</h3>
+        {/* <h3>What I have done from the start in my chosen field❔</h3>
         
-        <h3>Why you have to hire me❔</h3>
+        <h3>Why you have to hire me❔</h3> */}
       </div>
       <div className="image-wrapper">
         <img src="Why.png" alt="Why?" />

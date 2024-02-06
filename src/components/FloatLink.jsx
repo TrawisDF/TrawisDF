@@ -9,12 +9,12 @@ const FloatLink = () => {
         </Link>
       </div>
       <div className="floating-link" id="floating-link-2">
-        <a href="https://www.github.com" target="_blank">
+        <a href="https://github.com/trawisDF" target="_blank">
           <img src="github.png" alt="GitHub Logo" />
         </a>
       </div>
       <div className="floating-link" id="floating-link-3">
-        <a href="https://www.linkedin.com" target="_blank">
+        <a href="https://linkedin.com/in/tawid-khantiyoo-273146274" target="_blank">
           <img src="linkedinicon.png" alt="LinkedIn Logo" />
         </a>
       </div>

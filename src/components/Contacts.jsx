@@ -4,13 +4,15 @@ import "./Contacts.css";
 import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const formRef = useRef();
+  const [formData, setFormData] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(formRef);
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -22,9 +24,12 @@ const Contacts = () => {
         (result) => {
           console.log(result.text);
           alert("Email sent successfully!");
-          setEmail("");
-          setMessage("");
-          setName("");
+          // Clear form data
+          setFormData({
+            from_name: "",
+            from_email: "",
+            message: "",
+          });
         },
         (error) => {
           console.error("Error sending email:", error.text);
@@ -32,6 +37,15 @@ const Contacts = () => {
         }
       );
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <>
       <div className="image-wrapper img-contact">
@@ -54,15 +68,31 @@ const Contacts = () => {
         <form className="form-adjust" ref={formRef} onSubmit={sendEmail}>
           <div className="form-subcontainer">
             <label>Name: </label>
-            <input type="text" name="from_name" required />
+            <input
+              type="text"
+              name="from_name"
+              value={formData.from_name}
+              onChange={handleChange}
+              required
+            />
           </div>
           <div className="form-subcontainer">
             <label>Email: </label>
-            <input type="email" name="from_email" required />
+            <input
+              type="email"
+              name="from_email"
+              value={formData.from_email}
+              onChange={handleChange}
+              required
+            />
           </div>
           <div className="form-subcontainer">
             <label>Message: </label>
-            <textarea name="message" />
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
           </div>
           <button type="submit" value="Send" required>
             SEND

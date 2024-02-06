@@ -103,6 +103,7 @@ nav.navbar {
 
 div.contents {
   display: flex;
+  justify-content: space-between;
 }
 
 .main {
@@ -118,7 +119,7 @@ p {
   line-height: 23px;
   font-weight: 100;
 }
-button {
+button.get-start {
   margin-top: 10px;
   width: 100%;
   font-size: 15px;
@@ -131,24 +132,21 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button.get-start:hover {
   border-color: #2668db;
   background-color: #2668db;
 }
 
 @media screen and (max-width: 1075px) {
+  .logo a {
+    font-size: 30px;
+  }
   .contents {
     flex-direction: column;
   }
   .image-wrapper {
     display: flex;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 1075px) {
-  .logo a {
-    font-size: 30px;
   }
   .image-wrapper image {
     max-width: 400px;
@@ -170,7 +168,7 @@ button:hover {
   .logo a {
     font-size: 24px;
   }
-  li.nav-link a{
+  li.nav-link a {
     margin-left: 5px;
   }
   .main h1 {
@@ -184,4 +182,30 @@ button:hover {
 footer p {
   display: flex;
   justify-content: center;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 25px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 25px;
+}
+button {
+  margin-top: 10px;
+  width: 300px;
+  font-size: 15px;
+  height: 40px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #2668db;
+  background-color: #2668db;
 }

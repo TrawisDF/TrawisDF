@@ -8,3 +8,27 @@
   line-height: 40px;
 }
 
+li.certificate {
+  list-style: none;
+  line-height: 12px;
+}
+li.cert-detail p {
+  font-size: 14px;
+  line-height: 14px;
+}
+li.cert-detail {
+  list-style: square;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.cert-link p {
+  font-weight: 300;
+}
+p b {
+  font-weight: 400;
+}
+

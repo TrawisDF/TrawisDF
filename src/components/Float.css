@@ -1,0 +1,52 @@
+.floating-link {
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	left: -20px;
+	background-color: rgba(0, 0, 0, 0.752);
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+	border-top-right-radius: 20%;
+	border-bottom-right-radius: 20%;
+	z-index: 999;
+  }
+  #floating-link-1 {
+	top: 200px;
+  }
+  
+  #floating-link-2 {
+	top: 280px;
+  }
+  
+  #floating-link-3 {
+	top: 360px;
+  }
+  
+  .floating-link:hover {
+	left: 0px;
+  }
+  
+  .floating-link img {
+	width: 100%;
+	height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+	#floating-link-1 {
+	  top: 200px;
+	}
+  
+	#floating-link-2 {
+	  top: 250px;
+	}
+  
+	#floating-link-3 {
+	  top: 300px;
+	}
+	.floating-link {
+	  width: 50px;
+	  height: 50px;
+	  left: -15px;
+	  
+	}
+  }

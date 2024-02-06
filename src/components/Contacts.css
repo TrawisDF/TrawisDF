@@ -1,0 +1,52 @@
+.contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-header {
+  margin-top: 20vh;
+}
+div.main-contacts {
+  margin-top: 10vh;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.form-subcontainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+form {
+  padding-right: 50px;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1075px) {
+  .form-subcontainer {
+    min-width: 300px;
+  }
+  div.main-contacts {
+    margin-top: 5vh;
+    margin-left: 0px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    padding: 0px;
+  }
+  .main-contacts h2 {
+    text-align: center;
+  }
+  .contacts-header {
+    text-align: center;
+	margin-top: 5vh;
+  }
+}

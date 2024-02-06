@@ -22,6 +22,9 @@ const Contacts = () => {
         (result) => {
           console.log(result.text);
           alert("Email sent successfully!");
+          setEmail("");
+          setMessage("");
+          setName("");
         },
         (error) => {
           console.error("Error sending email:", error.text);

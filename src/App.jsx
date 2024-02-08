@@ -10,12 +10,10 @@ function App() {
   return (
     <>
       <FloatLink />
+      <Header />
       <div className="container">
-        <Header />
         <Section>
-          <div className="contents">
-            <Outlet />
-          </div>
+          <Outlet />
           <Footer />
         </Section>
       </div>

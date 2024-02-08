@@ -8,7 +8,7 @@ const Contents = () => {
     navigate('/about')
   }
   return (
-    <>
+    <div className="contents">
       <div className="main">
         <h1>
           Hello!! &#9995; <br />
@@ -29,7 +29,7 @@ const Contents = () => {
       <div className="image-wrapper">
         <img src="image.jpg" alt="Astroniod" />
       </div>
-    </>
+    </div>
   );
 };
 

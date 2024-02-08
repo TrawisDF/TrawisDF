@@ -47,7 +47,7 @@ const Contacts = () => {
   };
 
   return (
-    <>
+    <div className="contents">
       <div className="image-wrapper img-contact">
         <img src="bear.png" alt="Astroniod" />
       </div>
@@ -99,7 +99,7 @@ const Contacts = () => {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

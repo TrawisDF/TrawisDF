@@ -25,6 +25,7 @@ Section p {
 }
 
 .glass-container {
+  max-width: 1290px;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
@@ -39,8 +40,14 @@ Section p {
   z-index: 1;
 }
 
+.addition {
+  display: flex;
+  justify-content: space-between;
+}
+.addition .image-wrapper img {
+  margin-top: 0vh;
+}
 .image-wrapper img {
-  min-width: 300px;
   max-width: 600px;
   display: flex;
   margin-top: 5vh;
@@ -119,6 +126,10 @@ p {
   line-height: 23px;
   font-weight: 100;
 }
+span {
+  line-height: 23px;
+  font-weight: 100;
+}
 button.get-start {
   margin-top: 10px;
   width: 100%;
@@ -136,13 +147,88 @@ button.get-start:hover {
   border-color: #2668db;
   background-color: #2668db;
 }
+.contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+}
 
-@media screen and (max-width: 1075px) {
+.main-contacts {
+  margin-top: 10vh;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.form-subcontainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+form {
+  padding-right: 50px;
+  max-width: 300px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 25px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 25px;
+}
+li ul.cert-details {
+  margin-left: 15px;
+}
+ul.cert-details li {
+  list-style: none;
+  font-weight: 100;
+}
+.certificate h4 {
+  font-weight: 500;
+}
+button {
+  margin-top: 10px;
+  width: 300px;
+  font-size: 15px;
+  height: 40px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #2668db;
+  background-color: #2668db;
+}
+
+@media screen and (max-width: 1275px) {
+  .main-contacts {
+    margin-top: 0vh;
+    margin-left: 0px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.content {
+    display: flex;
+    flex-direction: column;
+  }
   .logo a {
     font-size: 30px;
   }
   .contents {
     flex-direction: column;
+    align-items: center;
   }
   .image-wrapper {
     display: flex;
@@ -162,9 +248,25 @@ button.get-start:hover {
   .main p {
     font-size: 16px;
   }
-}
+  .form-subcontainer {
+    min-width: 300px;
+  }
 
-@media screen and (max-width: 700px) {
+  .main-contacts h2 {
+    text-align: center;
+    padding-right: 0px;
+  }
+  form.form-adjust {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .addition {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
   .logo a {
     font-size: 24px;
   }
@@ -178,34 +280,8 @@ button.get-start:hover {
   .main p {
     font-size: 14px;
   }
-}
-footer p {
-  display: flex;
-  justify-content: center;
-}
-h2 {
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 25px;
-}
-h3 {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 25px;
-}
-button {
-  margin-top: 10px;
-  width: 300px;
-  font-size: 15px;
-  height: 40px;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-button:hover {
-  border-color: #2668db;
-  background-color: #2668db;
+  .addition .image-wrapper img {
+    width: 60%;
+    height: auto;
+  }
 }

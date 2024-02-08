@@ -1,0 +1,124 @@
+.description h3,
+.description p {
+  position: relative;
+  top: 40px;
+  left: -20px;
+  transition: all 0.5s ease;
+}
+
+.description h3 {
+  line-height: 15px;
+}
+.description p {
+  line-height: 0px;
+  font-weight: 500;
+  color: rgba(253, 253, 253, 0.372);
+}
+
+
+.img-container:hover .description h3, .img-container:hover .description p{
+  top: 0px;
+  left: 0px;
+}
+
+.img-container {
+  width: 80%;
+}
+
+img .project-description {
+  max-width: 700px;
+}
+.img-container {
+  position: relative;
+  display: flex;
+}
+
+.pos-right .img-container .description {
+  text-align: right;
+}
+
+.project-img {
+  max-width: 400px;
+}
+
+.pos-left {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.pos-right {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+.pos-left img {
+  margin-right: 30px;
+}
+.pos-right img {
+  margin-left: 30px;
+}
+img.project-img {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
+}
+
+img.project-img:hover {
+  filter: blur(2px) grayscale(70%) brightness(70%);
+}
+.pos-left img.project-img:hover {
+  transform: translate(2%, 2%);
+}
+.pos-right img.project-img:hover {
+  /* filter: blur(2px) grayscale(70%) brightness(70%); */
+  transform: translate(-2%, 2%);
+}
+
+.project-description {
+  width: 80%;
+  position: relative;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(-10%);
+}
+.img-container:hover .project-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1440px) {
+  .pos-left,
+  .pos-right {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .pos-left img.project-img:hover,
+  .pos-right img.project-img:hover {
+    transform: translateY(2%);
+  }
+
+  .pos-left .img-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pos-right .img-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  img.project-img {
+    margin: 0px;
+  }
+  .pos-right .img-container .description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-img {
+    max-width: 250px;
+  }
+}

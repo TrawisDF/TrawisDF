@@ -1,0 +1,8 @@
+.project-header {
+  margin-top: 10vh;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+div.contents > div.project-header {
+  text-align: center;
+}

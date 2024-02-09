@@ -5,6 +5,15 @@
   left: -20px;
   transition: all 0.5s ease;
 }
+@media screen and (max-width: 1440px) {
+  .description h3,
+  .description p {
+    position: relative;
+    top: 40px;
+    left: 0px;
+    transition: all 0.5s ease;
+  }
+}
 
 .description h3 {
   line-height: 15px;
@@ -15,8 +24,8 @@
   color: rgba(253, 253, 253, 0.372);
 }
 
-
-.img-container:hover .description h3, .img-container:hover .description p{
+.img-container:hover .description h3,
+.img-container:hover .description p {
   top: 0px;
   left: 0px;
 }
@@ -115,6 +124,10 @@ img.project-img:hover {
   }
   .pos-right .img-container .description {
     text-align: center;
+  }
+  .description h3,
+  .description p {
+    top: 20px;
   }
 }
 @media screen and (max-width: 768px) {

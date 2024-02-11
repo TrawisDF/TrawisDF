@@ -1,6 +1,9 @@
 import React from "react";
 import "../App.css";
 import "../components/About.css";
+
+import { Col, Row } from "react-bootstrap";
+
 const About = () => {
   return (
     <div className="contents">
@@ -40,8 +43,43 @@ const About = () => {
             my career full of passion, I would dedicate my time to hone the
             technical skills that are necessary for this industry with my good
             personality such as fast learner, ability to adapt quickly,
-            problem-solving and positive thinking
+            problem-solving and positive thinking.
           </p>
+          <h3>Skills</h3>
+
+          <div className="skills-container">
+            <div className="wrapped-skill">
+              <img src="/skills/html.png" alt="nothing" />
+              <p>HTML</p>
+            </div>
+            <div className="wrapped-skill">
+              <img src="/skills/css.png" alt="nothing" />
+              <p>CSS</p>
+            </div>
+            <div className="wrapped-skill">
+              <img src="/skills/javascript.png" alt="nothing" />
+              <div className="detailss">
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div className="wrapped-skill">
+              <img src="/skills/react.png" alt="nothing" />
+
+              <p>ReactJS</p>
+            </div>
+            <div className="wrapped-skill">
+              <img src="/skills/git.png" alt="nothing" />
+              <p>Git</p>
+            </div>
+            <div className="wrapped-skill">
+              <img src="/skills/github.png" alt="nothing" />
+              <p>GitHub</p>
+            </div>
+            <div className="wrapped-skill">
+              <img src="/skills/bootstrap.png" alt="nothing" />
+              <p>BootStrap</p>
+            </div>
+          </div>
         </div>
         <div className="addition">
           <div className="about-bottom">

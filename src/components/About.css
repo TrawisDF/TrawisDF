@@ -36,3 +36,46 @@ h4 {
 p b {
   font-weight: 400;
 }
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrapped-skill {
+  margin: 0px 30px;
+  display: flex;
+  justify-content: center;
+}
+.wrapped-skill p {
+  margin-left: 5px;
+}
+.wrapped-skill img {
+  max-width: 48px;
+  display: flex;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .wrapped-skill {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: 0px;
+  }
+  .skills-container {
+    text-align: center;
+  }
+  .about-bottom {
+    text-align: center;
+  }
+  ul.cert-details {
+    padding: 0px;
+    margin: 0px;
+  }
+  ul.certifications {
+    padding-left: 0px;
+  }
+  li ul.cert-details {
+    margin-left: 0px;
+  }
+}

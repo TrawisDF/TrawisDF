@@ -50,10 +50,11 @@ p b {
   margin-left: 5px;
 }
 .wrapped-skill img {
-  max-width: 48px;
+  max-width: 60px;
   display: flex;
   height: auto;
 }
+
 @media screen and (max-width: 768px) {
   .wrapped-skill {
     flex-direction: column;

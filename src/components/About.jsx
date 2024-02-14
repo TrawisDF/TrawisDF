@@ -79,6 +79,10 @@ const About = () => {
               <img src="/skills/bootstrap.png" alt="nothing" />
               <p>BootStrap</p>
             </div>
+            <div className="wrapped-skill tail">
+              <img src="/skills/tailwindCss.png" alt="nothing" />
+              <p>Tailwind</p>
+            </div>
           </div>
         </div>
         <div className="addition">

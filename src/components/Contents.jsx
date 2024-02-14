@@ -16,8 +16,9 @@ const Contents = () => {
         <h2>Tawid Khantiyoo</h2>
         <h3>Frontend Web Developer</h3>
         <p>
-          Fresh graduate student in civil transitioning to Web Developer as a
-          Frontend Web Developer with <b>React.js</b> skills.
+          Fresh graduate student in Civil engineering, transitioning to Web
+          Developer as a Frontend Web Developer with <b>React.js</b>{" "}
+          skills.
         </p>
         <button className="get-start" onClick={toAbout}>
           Get started

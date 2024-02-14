@@ -8,15 +8,15 @@ const projects = [
     content:
       "From MERN stack from scratch course. I have learned from an empty folder until I really can deploy this project on render.com, which is free for hosting, so it's unavoidable to have access downtime. (it takes time about 30 seconds to open this web)",
   },
-  // {
-  //   _id: "2",
-  //   name: "eCommerce Shop||2025",
-  //   website_url: "https://e-commerceshop-v2.onrender.com",
-  //   img_url: "eCom.png",
-  //   deploy_at: "Dec2023",
-  //   content:
-  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sequi voluptas fugiat dolor, temporibus unde inventore ad, voluptates delectus eos, ratione perspiciatis. Maxime cupiditate quisquam debitis repudiandae vitae minima. Modi.",
-  // },
+  {
+    _id: "2",
+    name: "Clone-DeveloperAppl-Home-Page",
+    website_url: "https://clone-dev-apple-home.onrender.com",
+    img_url: "apple-homepage.png",
+    deploy_at: "Feb2024",
+    content:
+      "A web home page with responsive design from Apple, Attempts to learn and practice Tailwind CSS skills to deal with responsive design and some React.js components state. Then, deploy as a static website on onrender.com",
+  },
   // {
   //   _id: "3",
   //   name: "eCommerce Shop||2023",

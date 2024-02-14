@@ -33,6 +33,7 @@ const Project = ({ project }) => {
             <div className="img-container">
               <div className="description">
                 <h3>{project.name}</h3>
+                <p>{project.deploy_at}</p>
                 <span className="project-description">{project.content}</span>
               </div>
               <a href={project.website_url} target="_blank">

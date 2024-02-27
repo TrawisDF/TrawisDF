@@ -1,8 +1,6 @@
-import React from "react";
 import "./Projects.css";
 import Project from "./Project.jsx";
 import projects from "../assets/project";
-import { Row } from "react-bootstrap";
 
 const Projects = () => {
   return (

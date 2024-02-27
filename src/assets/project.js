@@ -3,6 +3,7 @@ const projects = [
     _id: "1",
     name: "eCommerce Shop||2023",
     website_url: "https://e-commerceshop-v2.onrender.com",
+    gitUrl: "https://github.com/TrawisDF/eCommerceShop",
     img_url: "eCom.png",
     deploy_at: "Dec2023",
     content:
@@ -12,6 +13,7 @@ const projects = [
     _id: "2",
     name: "Clone-DeveloperAppl-Home-Page",
     website_url: "https://clone-dev-apple-home.onrender.com",
+    gitUrl: "https://github.com/TrawisDF/clone-developerApple-Home",
     img_url: "apple-homepage.png",
     deploy_at: "Feb2024",
     content:

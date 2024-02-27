@@ -1,9 +1,9 @@
 import "./Project.css";
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const Project = ({ project }) => {
   const [pos, setPos] = useState("");
-
+  console.log(project);
   useEffect(() => {
     setPos(project._id % 2 === 0 ? "right" : "left");
   }, [project]);
@@ -16,7 +16,7 @@ const Project = ({ project }) => {
         <div className={posClass}>
           {pos === "left" ? (
             <div className="img-container">
-              <a href={project.website_url} target="_blank">
+              <a href={project.gitUrl} target="_blank">
                 <img
                   className="project-img"
                   src={project.img_url}
@@ -36,7 +36,7 @@ const Project = ({ project }) => {
                 <p>{project.deploy_at}</p>
                 <span className="project-description">{project.content}</span>
               </div>
-              <a href={project.website_url} target="_blank">
+              <a href={project.gitUrl} target="_blank">
                 <img
                   className="project-img"
                   src={project.img_url}

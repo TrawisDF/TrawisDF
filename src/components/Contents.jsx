@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router";
 
 const Contents = () => {
@@ -17,8 +16,7 @@ const Contents = () => {
         <h3>Frontend Web Developer</h3>
         <p>
           Fresh graduate student in Civil engineering, transitioning to Web
-          Developer as a Frontend Web Developer with <b>React.js</b>{" "}
-          skills.
+          Developer as a Frontend Web Developer with <b>React.js</b> skills.
         </p>
         <button className="get-start" onClick={toAbout}>
           Get started

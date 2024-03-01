@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 
 const Project = ({ project }) => {
   const [pos, setPos] = useState("");
-  console.log(project);
+
   useEffect(() => {
     setPos(project._id % 2 === 0 ? "right" : "left");
   }, [project]);

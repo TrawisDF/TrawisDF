@@ -19,15 +19,16 @@ const projects = [
     content:
       "A web home page with responsive design from Apple, Attempts to learn and practice Tailwind CSS skills to deal with responsive design and some React.js components state. Then, deploy as a static website on onrender.com",
   },
-  // {
-  //   _id: "3",
-  //   name: "eCommerce Shop||2023",
-  //   website_url: "https://e-commerceshop-v2.onrender.com",
-  //   img_url: "eCom.png",
-  //   deploy_at: "Dec2023",
-  //   content:
-  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sequi voluptas fugiat dolor, temporibus unde inventore ad, voluptates delectus eos, ratione perspiciatis. Maxime cupiditate quisquam debitis repudiandae vitae minima. Modi.",
-  // },
+  {
+    _id: "3",
+    name: "Planning trip",
+    website_url: "https://planningtrip.onrender.com/",
+    gitUrl: "https://github.com/TrawisDF/planning-trips",
+    img_url: "planningtrip.png",
+    deploy_at: "Feb2024",
+    content:
+      "You can list all items you might need for a trip and also checked as it was packed.",
+  },
   // {
   //   _id: "4",
   //   name: "eCommerce Shop||2025",

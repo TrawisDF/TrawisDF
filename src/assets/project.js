@@ -17,7 +17,7 @@ const projects = [
     img_url: "apple-homepage.png",
     deploy_at: "Feb2024",
     content:
-      "A web home page with responsive design from Apple, Attempts to learn and practice Tailwind CSS skills to deal with responsive design and some React.js components state. Then, deploy as a static website on onrender.com",
+      "A web home page with responsive design from Apple, Attempts to learn and practice Tailwind CSS skills to deal with responsive design and some React.js components state.",
   },
   {
     _id: "3",
